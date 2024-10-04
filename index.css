@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     margin: 0;
@@ -15,6 +15,7 @@ nav {
     width: 100%;
     height: 80px;
     font-weight: bold;
+    border-bottom: 1px solid gray;
 }
 
 nav ul li {
@@ -28,6 +29,14 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     margin: 0 24px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(228, 228, 228);
+    transition: ease-in-out 0.2s;
+    ;
 }
 
 
@@ -45,6 +54,80 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.block_page {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 100px 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 8% 40px;
+}
+
+.content h1 {
+    margin: 10px 0;
+}
+
+.content p {
+    font-family: DM Serif Display, serif;
+    font-weight: none;
+    color: rgb(100, 99, 99);
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+.content h2 {
+    font-family: "Raleway", sans-serif;
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.small_a_tag {
+    display: flex;
+    margin: 30px 0px;
+}
+
+.small_a_tag a {
+    border: 2px solid gray;
+    border-radius: 16px;
+    padding: 12px 14px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: gray;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.small_a_tag a:hover {
+    background-color: rgb(201, 200, 200);
+}
+
+#right_a {
+    color: #faf9f5;
+    background-color: gray;
+}
+
+#right_a:hover {
+    background-color: rgb(201, 200, 200);
+
+}
+
+.block_page img {
+    width: 30%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+
 }
 
 .block {
@@ -68,7 +151,6 @@ nav ul li a {
 
 .introduction {
     padding: 0% 2%;
-    border-left: 1px solid black;
     width: 50%;
     margin: 0;
     display: flex;
@@ -76,6 +158,7 @@ nav ul li a {
 }
 
 .introduction p {
+    font-family: "Raleway", sans-serif;
     width: 80%;
     font-size: 18px;
     margin: 0;
@@ -83,7 +166,7 @@ nav ul li a {
 }
 
 .box {
-    width: 19%;
+    width: 17%;
     border: 2px solid gray;
     border-radius: 12%;
     padding: 22px 70px;
@@ -124,7 +207,7 @@ nav ul li a {
 
 .sub_box li p {
     font-size: 20px;
-    font-family: DM Serif Display, Serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
     margin: 40px;
     padding: 0;
@@ -136,21 +219,194 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
-    height: 500px;
+    border: 2px solid gray;
+    height: 700px;
     width: 20%;
-    border-radius: 9%;
+    border-radius: 1%;
     margin: 0 20px;
     padding: 10px;
+}
+
+.projects_box {
+    font-family: DM Serif Display, Serif;
 }
 
 .projects_box img {
     width: 80%;
     object-fit: cover;
     height: 50%;
-    border-radius: 6%;
+    border-radius: 7%;
 }
 
 .projects_box p {
-    padding: 20px;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 10px;
+    font-weight: none;
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 12%;
+    background-size: 90% auto;
+    text-align: center;
+    margin: auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    font-family: DM Serif Display, serif;
+    color: #333;
+}
+
+.textarea-field {
+    width: 570px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: DM Serif Display, serif;
+    font-style: normal;
+    color: #333;
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+    font-family: DM Serif Display, serif;
+    font-style: italic;
+    color: #888;
+}
+
+.textarea-field {
+    resize: none;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-family: DM Serif Display, serif;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+
+.submit-icon {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: #555;
+}
+
+
+.contact-link:hover {
+    background-color: #faf9f5;
+    border-color: #333;
+}
+
+.contact-icon {
+    width: 10px;
+    height: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-family: DM Serif Display, serif;
+    margin: 0;
+}
+
+.contact-section p {
+    font-family: DM Serif Display, serif;
+}
+
+
+
+.contact-link:hover {
+    background-color: #faf9f5;
+    border-color: #333;
+}
+
+
+.contact-icon {
+    width: 24px;
+    height: auto;
 }

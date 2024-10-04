@@ -16,10 +16,29 @@
             <li><a href="">Home</a></li>
             <li><a href="">About Me</a></li>
             <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="./contact/contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div class="title">
+    <div class="block_page">
+        <img src="./image/ava.jpg" alt="">
+        <div class="content">
+            <p>Hello, I'm</p>
+            <h1 style="font-family: DM Serif Display, serif;"">
+                John Doe!
+            </h1>
+            <h2>
+                Frontend Developer
+            </h2>
+            <div class=" small_a_tag">
+                <a href=""> Download CV</a>
+                <a id="right_a" href=""> Contact Info</a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class=" title">
         <p
             style="font-size: 23px; margin: 3% auto 0px; font-family: DM Serif Display, serif; font-weight: none; color: gray ;">
             Hi there,
@@ -35,14 +54,13 @@
         <div class="introduction">
 
             <h1 style="font-family: DM Serif Display, serif;"">
-                Hello, I am John Doe!
+                Hello, I'm John Doe!
             </h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestiae voluptatem exercitationem
                 vitae quas perferendis quo dolores tempore dicta beatae laudantium, ut quisquam. Totam voluptatum minima
                 veniam, temporibus explicabo nostrum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-                animi optio inventore error? Commodi distinctio magni unde excepturi fugit, maiores odio sint expedita
-                necessitatibus beatae magnam debitis ipsa in quaerat?
+                animi optio inventore error? Necessitatibus beatae magnam debitis ipsa in quaerat?
             </p>
         </div>
     </div>
@@ -109,31 +127,75 @@
         </div>
         <div class="block">
             <div class="projects_box">
-                <img src="./image/poster.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum vel ullam fuga enim, culpa nemo
-                    est error placeat sapiente veniam deleniti sunt, quo corporis minima non obcaecati necessitatibus
-                    ipsam!
+                <img src="./image/batman-poster.jpeg" alt="">
+                <h2>Flying Car</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestias mollitia excepturi
+                    nam
+                    ducimus alias rem consequatur necessitatibus quos optio? Earum magnam molestiae repudiandae!
                 </p>
             </div>
             <div class="projects_box">
-                <img src="./image/poster.jpg" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem architecto sed ea
-                    quaerat aut officiis quam, alias corrupti nam dignissimos explicabo delectus similique nesciunt
-                    maiores atque eaque sint est.</p>
+                <img src="./image/batman-poster.jpeg" alt="">
+                <h2>Time Machine</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestias mollitia excepturi
+                    nam
+                    ducimus alias rem consequatur necessitatibus quos optio? Earum magnam molestiae repudiandae!</p>
             </div>
             <div class="projects_box">
-                <img src="./image/poster.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestias mollitia excepturi nam
-                    ducimus alias rem consequatur necessitatibus quos optio? Earum magnam molestiae repudiandae ex magni
-                    asperiores iure dolorum dolorem!</p>
+                <img src="./image/batman-poster.jpeg" alt="">
+                <h2>Doraemon</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestias mollitia excepturi
+                    nam
+                    ducimus alias rem consequatur necessitatibus quos optio? Earum magnam molestiae repudiandae!</p>
             </div>
             <div class="projects_box">
-                <img src="./image/poster.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestias mollitia excepturi nam
-                    ducimus alias rem consequatur necessitatibus quos optio? Earum magnam molestiae repudiandae ex magni
-                    asperiores iure dolorum dolorem!</p>
+                <img src="./image/batman-poster.jpeg" alt="">
+                <h2>Badman</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestias mollitia excepturi
+                    nam
+                    ducimus alias rem consequatur necessitatibus quos optio? Earum magnam molestiae repudiandae!</p>
             </div>
         </div>
+        <div class=" title">
+            <h1
+                style="padding-bottom: 20px; margin: 0; font-family: DM Serif Display, serif; border-bottom: 2px solid gray;">
+                Contact me</h1>
+        </div>
+        <div id="contact" class="contact-section">
+            <h2>Get in touch</h2>
+            <p>I'd love to hear from you! If you have any questions,
+                comments, or feedback, please use the form below &hearts; </p>
+
+            <form method="POST" action="https://api.web3forms.com/submit" class="contact-form">
+                <input type="hidden" name="access_key" value="41d8£510-7944-4ebc-99£d-200b93e4bd66">
+
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your name" class="input-field" required name="name">
+                    <input type="email" placeholder="Enter your email" class="input-field" required name="email">
+                </div>
+                <textarea rows="6" placeholder="Enter your message" class="textarea-field" required
+                    name="message"></textarea>
+
+                <button class="submit-btn">Submit now
+                    <img src="./contact/images/right-arrow-white.png" alt="Submit" class="submit-icon">
+                </button>
+            </form>
+        </div>
+
+        <div class="button-container">
+            <a href="mailto:egroup4@gmail.com" class="contact-link">
+                <img src="./contact/images/email-icon.png" alt="Email Icon" class="contact-icon">
+
+            </a>
+            <a href="https://www.linkedin.com" class="contact-link">
+                <img src="./contact/images/linkedin-icon.png" alt="LinkedIn Icon" class="contact-icon">
+
+            </a>
+            <a href="https://www.instagram.com/" class="contact-link">
+                <img src="./contact/images/instagram-icon.jpeg" alt="Email Icon" class="contact-icon">
+            </a>
+        </div>
+
 </body>
 
 </html>
