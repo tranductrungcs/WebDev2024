@@ -225,9 +225,6 @@ nav ul li a:hover {
     border-radius: 1%;
     margin: 0 20px;
     padding: 10px;
-}
-
-.projects_box {
     font-family: DM Serif Display, Serif;
 }
 
@@ -236,6 +233,8 @@ nav ul li a:hover {
     object-fit: cover;
     height: 50%;
     border-radius: 7%;
+    box-shadow: 5px 5px 5px black;
+    border: 0px solid;
 }
 
 .projects_box p {
