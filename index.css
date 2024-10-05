@@ -7,6 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #faf9f5;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -36,7 +38,6 @@ nav ul li a {
 nav ul li a:hover {
     background-color: rgb(228, 228, 228);
     transition: ease-in-out 0.2s;
-    ;
 }
 
 
@@ -326,13 +327,6 @@ nav ul li a:hover {
     margin-left: 10px;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 30px;
-}
 
 .contact-btn {
     padding: 10px 20px;
@@ -354,38 +348,11 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-
-.contact-link:hover {
-    background-color: #faf9f5;
-    border-color: #333;
-}
-
-.contact-icon {
-    width: 10px;
-    height: auto;
-}
-
 .button-container {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     margin-top: 0.5rem;
-}
-
-
-.contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 10px;
-    background-color: white;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #333;
-    transition: background-color 0.3s, border-color 0.3s;
-    text-align: center;
 }
 
 .contact-section h2 {
@@ -397,15 +364,43 @@ nav ul li a:hover {
     font-family: DM Serif Display, serif;
 }
 
-
-
-.contact-link:hover {
-    background-color: #faf9f5;
-    border-color: #333;
+footer {
+    border-top: 1px solid gray;
+    width: 90%;
+    margin: 30px 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
+.footer_box {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_box h2 {
+    font-family: DM Serif Display, Serif;
+}
+
+.footer_box p {
+    font-family: "Raleway", sans-serif;
+}
+
+.contact-link {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
 
 .contact-icon {
-    width: 24px;
+    width: 22px;
     height: auto;
 }
