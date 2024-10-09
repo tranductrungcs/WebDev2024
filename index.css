@@ -220,21 +220,20 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid gray;
-    height: 700px;
+    height: 620px;
     width: 20%;
-    border-radius: 1%;
+    border: 2px solid gray;
     margin: 0 20px;
     padding: 10px;
     font-family: DM Serif Display, Serif;
 }
 
 .projects_box img {
-    width: 80%;
+    width: 70%;
     object-fit: cover;
     height: 50%;
     border-radius: 7%;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 3px 3px 4px rgb(155, 146, 146);
     border: 0px solid;
 }
 
@@ -243,6 +242,7 @@ nav ul li a:hover {
     margin: 0;
     padding: 10px;
     font-weight: none;
+    object-fit: cover;
 }
 
 .contact-section {
